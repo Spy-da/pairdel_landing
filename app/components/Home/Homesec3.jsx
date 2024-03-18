@@ -51,10 +51,10 @@ export default function Homesec3() {
         });
     }, []);
   return (
-    <div className='text-[#FFFFFF] overflow-hidden flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-0 items-center justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/ssbg-lines.svg)]  xl:bg-[url(/bg-liness.svg)] bg-no-repeat lg:bg-repeat xl:bg-no-repeat homesec3'>
+    <div className='text-[#FFFFFF] overflow-hidden flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-0 items-center justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] bg-no-repeat lg:bg-repeat xl:bg-no-repeat homesec3'>
         <div className='relative md:block flex justify-center '>
             <Image src={'/phone3.svg'} height={530} width={509} alt='' className="w-[70%] md:w-[100%]"></Image>
-            <Image src={'/CenterAlert.svg'} height={146} width={192} alt='' className='absolute top-[-50%] md:top-[-5%] left-[5%] md:left-[-5%] centerAlert max-w-[35%] md:max-w-[100%]'></Image>
+            <Image src={'/CenterAlert.svg'} height={146} width={192} alt='' className='absolute top-[-30%] md:top-[-5%] left-[5%] md:left-[-5%] centerAlert max-w-[35%] md:max-w-[100%]'></Image>
             <Image src={'/pop6.svg'} height={70} width={298} alt='' className='absolute right-0 md:right-[-15%] bottom-[8%] max-w-[45%] md:max-w-[100%] pop6'></Image>
             <Image src={'/pop7.svg'} height={70} width={298} alt='' className='absolute right-[-30%] md:right-[-50%] bottom-[-8%] max-w-[45%] md:max-w-[100%] pop7'></Image>
         </div>

@@ -14,7 +14,7 @@ export default function Homesec4() {
     setShowTravelers((prevState) => !prevState)
   }
   return (
-    <div className='homesec4  pt-[92px] pb-[96px] px-[24px] xl:px-[128px] bg-[#FFFFFF] text-[#1E2F28] ' id='homesec4'>
+    <div className='homesec4 pt-[48px] md:pt-[92px] pb-[63.57px] md:pb-[96px] px-[24px] xl:px-[128px] bg-[#FFFFFF] text-[#1E2F28] ' id='homesec4'>
         <h1 className='font-[700] text-[36px] md:text-[56px] leading-[44px] md:leading-[68px] text-center mb-[36px]'>
             How Pairdel works
         </h1>
