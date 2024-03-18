@@ -2,32 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color:#FFFFFF ;
+    background-color: #25A774;
+    cursor: none;
+  }
+
+  
+  [data-theme="dark"] body {
+  background-color: #000;
+  color: #FFFFFF;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+[data-theme="dark"] .promotion,[data-theme="dark"] .homesec4{
+    background-color: #000;
+    color: #FFFFFF;
+}
+[data-theme="dark"] .shoptravel-content h2,
+[data-theme="dark"] .shoptravel-content h3, 
+[data-theme="dark"] .shoptravel-content p{
+  color: #FFFFFF ;
+}
+
+
+body::-webkit-scrollbar {
+	width:5px;
+	background:#eee;
+}
+
+body::-webkit-scrollbar-button {
+	width:1px;
+	height:8px;
+	background:#666;
+}
+
+body::-webkit-scrollbar-thumb {
+	background:#999;
+}
+
+
+/* CSS from HomeSSec4  */
+.shop-travel{
+  background-color: #04492E;
+  color: #FFFFFF;
+  /* transition: background-color 0.2s ease, color 0.2s ease; */
+}
+
+.inactive_shoptravel{
+  border: 1px solid #EBEBEB;
+  color: #5C5C5C;
+}
+
+[data-theme="dark"] .inactive_shoptravel{
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+.navbarScrolled {
+  background-color: #25A774; /* Change this to the color you want when scrolled */
+  /* Other styles */
+}
+
+@media screen and (max-width: 790px) {
+  .navMenu {
+    position: fixed;
+    top: -110%;
+    /* height: 50vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem 1.5rem;
+    gap: 20px;
+    background-color: #f8f5ff;
+    z-index: 20;
+    text-align: center;
+    box-shadow: 2px 5px 5px rgb(170, 164, 164);
+  }
+
+  .active .hamburger-bar.top {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .active .hamburger-bar.middle {
+    opacity: 0;
+  }
+
+  .active .hamburger-bar.bottom {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hamburger.active {
+    z-index: 30;
   }
 }
+  
