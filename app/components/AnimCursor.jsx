@@ -10,7 +10,9 @@ export default function AnimCursor() {
       color='193, 11, 111'
       outerAlpha={0.2}
       outerStyle={{
-        border: '3px solid #B0916E',
+        // border: '3px solid #B0916E',
+        // border: '3px solid #FFFFFF',
+        border: '3px solid #ff0000',
         backgroundColor: 'transparent'
       }}
       innerStyle={{
@@ -18,7 +20,7 @@ export default function AnimCursor() {
       }}
       innerScale={0.7}
       outerScale={5}
-      trailingSpeed ={5}
+      trailingSpeed ={6}
       clickables={[
         'a',
         'input[type="text"]',

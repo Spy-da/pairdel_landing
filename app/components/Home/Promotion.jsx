@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Promotion() {
   return (
-    <div className='promotion pt-[48px] md:pt-0 pb-[96px] md:pb-0 md:py-[112px] px-[24px] xl:px-[128px] bg-[#FFFFFF] ' id='promotion'>
+    <div className='promotion pt-[48px]   pb-[96px]  md:py-[112px] px-[24px] xl:px-[128px] bg-[#FFFFFF] ' id='promotion'>
         <div className='px-[24px] md:px-[96px] flex flex-col lg:flex-row lg:justify-between gap-[64px] lg:gap-[0px] bg-[#25A774] rounded-[32px] text-[#FFFFFF]  bg-[url(/bg-liness.svg)] bg-center bg-no-repeat'>
             <div className='flex flex-col gap-[32px] md:gap-[44px] pt-[64px] md:pt-[104px] lg:pb-[96px] w-full lg:w-[560px]'>
                 <span className='flex flex-col gap-[16px] md:gap-[20px] text-start'>

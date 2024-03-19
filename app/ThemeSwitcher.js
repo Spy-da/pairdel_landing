@@ -20,7 +20,7 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <div className="fixed right-[20px] md:right-[36px] bottom-[12px] ">
+    <div className="fixed right-[20px] md:right-[36px] bottom-[12px] z-[100]">
       <button onClick={toggleTheme}>
         {theme === "light" ? (
           <Image src="/night.svg" width={64} height={64} alt="Dark Mode" className="w-[32px] h-auto md:w-full" />

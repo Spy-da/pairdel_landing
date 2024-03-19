@@ -4,7 +4,7 @@ import React from 'react'
 export default function HomeHero() {
   return (
     <div className='  flex flex-col lg:flex-row items-center justify-between /pb-[70px]  lg:pr-[11px] pt-[167.33px] lg:pt-[80px] xl:pt-[0px] px-[24px] xl:px-[0px] xl:pl-[128px] text-[#FFFFFF] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] bg-no-repeat lg:bg-repeat xl:bg-no-repeat'>
-        <div className='lg:w-[50%] xl:w-[545px] flex flex-col gap-[44px] '>
+        <div className='lg:w-[50%] 2xl:w-[545px] flex flex-col gap-[44px] '>
             <div className='flex flex-col gap-[20px] justify-normal w-full'>
                 <h2 className='font-[700] text-[36px]  md:text-[56px] leading-[44px] md:leading-[68px]'>
                     Lorem ipsum dolor, Lorem ipsum
@@ -27,7 +27,7 @@ export default function HomeHero() {
             </span>
         </div>
 
-        <div className='xl:w-[780px] lg:w-[45%] w-[100%]'>
+        <div className='2xl:w-[780px] lg:w-[50%] w-[100%]'>
             <Image src={'/herogif.gif'} width={780} height={590} alt='' className='md:mb-[70px]  '></Image>
         </div>
     </div>
