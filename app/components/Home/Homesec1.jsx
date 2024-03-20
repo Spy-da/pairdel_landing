@@ -39,7 +39,7 @@ export default function Homesec1() {
         });
     }, []);
   return (
-    <div className='text-[#FFFFFF]  flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[107px] items-center /justify-center /lg:justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] bg-no-repeat lg:bg-repeat xl:bg-no-repeat'>
+    <div className=' text-[#FFFFFF]  flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[107px] items-center /justify-center /lg:justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] bg-no-repeat md:bg-repeat xl:bg-no-repeat'>
         <div className='relative md:block flex justify-center'>
             <Image src={'/phone1.svg'} height={530} width={509} alt='' className='phone1 w-[70%] md:w-[100%]'></Image>
             <Image src={'/pop1.svg'} height={256} width={216} alt='' className='absolute top-[-20%] md:top-[-10%] right-[10%] md:right-0  max-w-[30%] md:max-w-[100%]'></Image>

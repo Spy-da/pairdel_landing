@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${fig.className}  bg-[#25A774]`}>
+      <body className={`${fig.className}  bg-[#25A774] `}>
         <AnimCursor></AnimCursor>
         
         <Nav></Nav>
