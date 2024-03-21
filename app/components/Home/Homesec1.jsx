@@ -39,14 +39,14 @@ export default function Homesec1() {
         });
     }, []);
   return (
-    <div className=' text-[#FFFFFF]  flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[107px] items-center /justify-center /lg:justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] bg-no-repeat md:bg-repeat xl:bg-no-repeat'>
+    <div className='homesec1 text-[#FFFFFF]  flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[107px] items-center /justify-center /lg:justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] /bg-center /md:bg-cover /bg-no-repeat bg-repeat xl:bg-no-repeat'>
         <div className='relative md:block flex justify-center'>
             <Image src={'/phone1.svg'} height={530} width={509} alt='' className='phone1 w-[70%] md:w-[100%]'></Image>
             <Image src={'/pop1.svg'} height={256} width={216} alt='' className='absolute top-[-20%] md:top-[-10%] right-[10%] md:right-0  max-w-[30%] md:max-w-[100%]'></Image>
             <Image src={'/pop2.svg'} height={122} width={327} alt='' className='absolute bottom-[-10%] right-[50%] md:right-[45%] max-w-[45%] md:max-w-[100%] pop2'></Image>
         </div>
 
-        <div className='w-full md:w-[522px] flex flex-col gap-[20px] text-start'>
+        <div className='w-full lg:w-[522px] flex flex-col gap-[20px] text-start'>
             <h2 className='font-[700] text-[36px]  md:text-[56px] leading-[44px] md:leading-[68px]'>
                 Lorem ipsum dolor sit consectetur.
             </h2>

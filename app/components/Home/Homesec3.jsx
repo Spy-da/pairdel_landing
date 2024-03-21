@@ -51,7 +51,7 @@ export default function Homesec3() {
         });
     }, []);
   return (
-    <div className=' text-[#FFFFFF] overflow-hidden flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[141px] items-center /justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] bg-no-repeat md:bg-repeat xl:bg-no-repeat homesec3'>
+    <div className=' text-[#FFFFFF] overflow-hidden flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[141px] items-center /justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] /xl:bg-center /md:bg-cover /bg-no-repeat bg-repeat xl:bg-no-repeat homesec3'>
         <div className='relative md:block flex justify-center '>
             <Image src={'/phone3.svg'} height={530} width={509} alt='' className="w-[70%] md:w-[100%]"></Image>
             <Image src={'/CenterAlert.svg'} height={146} width={192} alt='' className='absolute top-[-30%] md:top-[-5%] left-[5%] md:left-[-5%] centerAlert max-w-[35%] md:max-w-[100%]'></Image>
@@ -59,7 +59,7 @@ export default function Homesec3() {
             <Image src={'/pop7.svg'} height={70} width={298} alt='' className='absolute right-[-30%] md:right-[-50%] bottom-[-8%] max-w-[45%] md:max-w-[100%] pop7'></Image>
         </div>
 
-        <div className='w-full md:w-[522px] flex flex-col gap-[20px] text-start'>
+        <div className='w-full lg:w-[522px] flex flex-col gap-[20px] text-start'>
             <h2 className='font-[700] text-[36px]  md:text-[56px] leading-[44px] md:leading-[68px]'>
                 Lorem ipsum dolor sit consectetur.
             </h2>

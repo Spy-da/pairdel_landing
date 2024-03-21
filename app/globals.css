@@ -68,28 +68,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width:430px) {
-  /* .navMenu {
-    position: fixed;
-    top:-42%;
-    right: -130%;
-    height: 100vh;
-    width: 115%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background: #000;
-    
-    z-index: 20;
-    text-align: center;
-  } */
+  
+
  .navMenu{
-  background: black;
+  background: #1E2F28;
   height: 100vh;
   position: fixed;
   width: 100%;
   top: 0%;
   right: -100%;
+ }
+
+ [data-theme="dark"] .navMenu{
+  background: #000000;
  }
   .active .hamburger-bar.top {
     transform: translateY(8px) rotate(45deg);
@@ -146,5 +137,12 @@ body::-webkit-scrollbar-thumb {
 .navMenu Link{
   border-bottom: #04492E;
 }
+
+/* @media screen and (min-width:425px) {
+    .homesec1{
+      padding-right: 47px;
+      padding-left: 47px;
+    }
+} */
 
   
