@@ -21,13 +21,13 @@ export default function RootLayout({ children }) {
       <body className={`${fig.className}  bg-[#25A774] `}>
         <AnimCursor></AnimCursor>
         
+        
         <Nav></Nav>
         
-        
-          <Providers>
-            <ThemeSwitcher></ThemeSwitcher>
-              {children}
-          </Providers>
+        <Providers>
+          <ThemeSwitcher></ThemeSwitcher>
+            {children}
+        </Providers>
             
           
       </body>

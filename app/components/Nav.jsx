@@ -38,8 +38,8 @@ export default function Nav() {
         setIsOpen(!isOpen);
     };
     return (
-        <div id='navbar' className={`font-[600] text-[20px] leading-[28px]  w-full fixed lg:left-[0%] xl:left-[0%] 2xl:left-[5.5%] text-[#FFFFFF] z-[80] 3xl:flex justify-center`}>
-            <div className={`mx-[24px] xl:mx-0 barbar pl-[24px] md:pl-[32px] border-[1.77px] border-[#FFFFFF1A] pr-[10px] md:pr-[16px] flex justify-between items-center mt-[32px]  xl:ml-[128px] 2xl:ml-[45px] 3xl:ml-[0] bg-gradient-to-b from-[#FFFFFF1F] to-[#FFFFFF1F] backdrop-blur-[20px] md:w-fit py-[10px] md:py-[16px] gap-[64px] rounded-[4000px] ${isOpen ? "active" : ""}`}>
+        <div id='navbar' className={`font-[600] text-[20px] leading-[28px] /flex w-full  justify-start xl:pl-[128px] fixed /md:left-[24px] lg:left-[50px] xl:left-[64px]  text-[#FFFFFF] z-[80] 3xl:flex`}>
+            <div className={`mx-[24px] xl:mx-0 barbar pl-[24px] md:pl-[32px] border-[1.77px] border-[#FFFFFF1A] pr-[10px] md:pr-[16px] flex justify-between items-center mt-[32px]  /xl:ml-[128px] /2xl:ml-[45px] /3xl:ml-[0] bg-gradient-to-b from-[#FFFFFF1F] to-[#FFFFFF1F] backdrop-blur-[20px] md:w-fit py-[10px] md:py-[16px] gap-[64px] rounded-[4000px] ${isOpen ? "active" : ""}`}>
                 <Link href={'/'} className='flex items-center gap-[11.76px]'>
                     <Image width={35.11} height={36} src={'/pairdelLogo.svg'} alt='logo'/>
                     <p>Pairdel</p> 
