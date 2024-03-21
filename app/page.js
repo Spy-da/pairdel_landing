@@ -10,7 +10,7 @@ import Promotion from "./components/Home/Promotion";
 export default function Home() {
   return (
     <main className="">
-      <div className="w-full flex flex-col justify-center lg:px-[50px] xl:px-[64px] /items-center /bg-[url(/bg-liness.svg)]">
+      <div className="w-full flex flex-col justify-center /lg:px-[50px] xl:px-[64px] 3xl:items-center /bg-[url(/bg-liness.svg)]">
         <div>
           <HomeHero></HomeHero>
           <Homesec1></Homesec1>
