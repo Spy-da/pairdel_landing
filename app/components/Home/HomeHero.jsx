@@ -7,7 +7,8 @@ export default function HomeHero() {
         <div className='lg:w-[50%] 2xl:w-[545px] flex flex-col gap-[44px] '>
             <div className='flex flex-col gap-[20px] justify-normal w-full'>
                 <h2 className='font-[700] text-[36px]  md:text-[56px] leading-[44px] md:leading-[68px]'>
-                    Lorem ipsum dolor, Lorem ipsum
+                    Shop anywhere, 
+                    Earn while you travel
                 </h2>
 
                 <p className='font-[500] text-[18px] md:text-[22px] leading-[24px] md:leading-[33px]'>
@@ -27,7 +28,7 @@ export default function HomeHero() {
             </span>
         </div>
 
-        <div className='2xl:w-[780px] lg:w-[50%] w-[100%]'>
+        <div className='2xl:w-[745px] lg:w-[50%] w-[100%]'>
             <Image src={'/herogif.gif'} width={780} height={590} alt='' className='md:mb-[70px]  '></Image>
         </div>
     </div>

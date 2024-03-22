@@ -4,7 +4,7 @@ import React from 'react'
 export default function Promotion() {
   return (
     <div className='promotion pt-[48px]   pb-[96px]  md:py-[112px] px-[24px] xl:px-[128px] bg-[#FFFFFF] ' id='promotion'>
-        <div className='px-[24px] md:px-[96px] flex flex-col lg:flex-row lg:justify-between gap-[64px] lg:gap-[0px] bg-[#25A774] rounded-[32px] text-[#FFFFFF]  bg-[url(/bg-liness.svg)] bg-center bg-no-repeat'>
+        <div className='promotion-content px-[24px] md:px-[96px] flex flex-col lg:flex-row lg:justify-between gap-[64px] lg:gap-[0px] /bg-[#04492E] rounded-[32px] text-[#FFFFFF]  bg-[url(/promoLight.svg)] bg-cover bg-no-repeat '>
             <div className='flex flex-col gap-[32px] md:gap-[44px] pt-[64px] md:pt-[104px] lg:pb-[96px] w-full lg:w-[560px]'>
                 <span className='flex flex-col gap-[16px] md:gap-[20px] text-start'>
                     <h1 className='font-[700] text-[36px] md:text-[50px] 2xl:text-[56px] leading-[44px] lg:leading-[68px] '>Shop anywhere, 
@@ -24,8 +24,9 @@ export default function Promotion() {
             </div>
 
 
-            <div className='flex items-end'>
-                <Image src={'/mockup.svg'} height={681} width={335} alt='' className=''></Image>
+            <div className='flex items-end relative'>
+                <Image src={'/promotionImg.svg'} height={681} width={335} alt='' className=''></Image>
+                <Image src={'/5Star.gif'} height={261} width={133} alt='' className='absolute bottom-0 right-0 md:right-[40%] lg:right-0'></Image>
             </div>
         </div>
     </div>

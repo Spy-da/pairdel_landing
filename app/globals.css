@@ -62,9 +62,12 @@ body::-webkit-scrollbar-thumb {
   border-color: #FFFFFF;
   color: #FFFFFF;
 }
+[data-theme="dark"] .promotion-content{
+  background-image: url('/promoDark.svg') ;
+}
 .navbarScrolled {
-  background-color: #25A774; /* Change this to the color you want when scrolled */
-  /* Other styles */
+  background-color: #25A774;
+  
 }
 
 @media screen and (max-width:430px) {
@@ -100,6 +103,14 @@ body::-webkit-scrollbar-thumb {
     right: 10%;
     z-index: 70;
   } */
+
+  .promotion-content{
+    background-image: url('/promoSmallLight.svg') ;
+  }
+
+  [data-theme="dark"] .promotion-content{
+    background-image: url('/promoSmallDark.svg') ;
+  }
 }
 
 .hamburger {

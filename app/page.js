@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <main className="">
       <div className="w-full flex flex-col justify-center /lg:px-[50px] xl:px-[64px] 3xl:items-center /bg-[url(/bg-liness.svg)]">
-        <div>
-          <HomeHero></HomeHero>
-          <Homesec1></Homesec1>
-          <Homesec2></Homesec2>
-          <Homesec3></Homesec3>
-        </div>
+        
+        <HomeHero></HomeHero>
+        <Homesec1></Homesec1>
+        <Homesec2></Homesec2>
+        <Homesec3></Homesec3>
+        
       </div>
       <Homesec4></Homesec4>
       <Promotion></Promotion>
