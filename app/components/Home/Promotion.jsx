@@ -26,7 +26,7 @@ export default function Promotion() {
 
             <div className='flex items-end relative'>
                 <Image src={'/promotionImg.svg'} height={681} width={335} alt='' className=''></Image>
-                <Image src={'/5Star.gif'} height={261} width={133} alt='' className='absolute bottom-0 right-0 md:right-[40%] lg:right-0'></Image>
+                <Image src={'/5Star.gif'} height={133} width={261} alt='' className='absolute bottom-[-3%] right-[-2%] md:right-[33%] md:bottom-[-10%] lg:right-[-6%] lg:bottom-[-6%]'></Image>
             </div>
         </div>
     </div>
