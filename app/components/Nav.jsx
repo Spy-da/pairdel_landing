@@ -2,44 +2,51 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { useState } from 'react';
-// import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 
 export default function Nav() {
-    // const [isScrolled, setIsScrolled] = useState(false);
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const scrollPosition = window.scrollY;
-    //         const homesec4Element = document.getElementById('homesec4');
-
-    //         if (homesec4Element) {
-    //             const homesec4Position = homesec4Element.offsetTop + homesec4Element.offsetHeight;
-                
-    //             // Change 50 to the desired offset from the top of the section
-    //             if (scrollPosition > homesec4Position) {
-    //                 setIsScrolled(true);
-    //             } else {
-    //                 setIsScrolled(false);
-    //             }
-    //         }
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const targetElement = document.getElementById('homesec4');
+            
+            if (targetElement) {
+                const targetPosition = targetElement.offsetTop;
+                const navBar = document.getElementById('navbar');
+                
+                if (scrollPosition >= targetPosition && scrollPosition <= targetPosition + 1000) {
+                    setIsScrolled(true);
+                    if (navBar) {
+                        navBar.classList.add('scrolled');
+                        navBar.classList.remove('unscrolled');
+                    }
+                } else {
+                    setIsScrolled(false);
+                    if (navBar) {
+                        navBar.classList.add('unscrolled');
+                        navBar.classList.remove('scrolled');
+                    }
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <div id='navbar' className={`font-[600] text-[20px] leading-[28px] /flex w-full  justify-start xl:pl-[128px] fixed  xl:left-[64px] 3xl:left-[30%] text-[#FFFFFF] z-[80]`}>
-            <div className={`mx-[24px] xl:mx-0 barbar pl-[24px] md:pl-[32px] border-[1.77px] border-[#FFFFFF1A] pr-[10px] md:pr-[16px] flex justify-between items-center mt-[32px]  /xl:ml-[128px] /2xl:ml-[45px] /3xl:ml-[0] bg-gradient-to-b from-[#FFFFFF1F] to-[#FFFFFF1F] backdrop-blur-[20px] md:w-fit py-[10px] md:py-[16px] gap-[64px] rounded-[4000px] ${isOpen ? "active" : ""}`}>
+        <div  className={`font-[600] text-[20px] leading-[28px] /flex w-full  justify-start xl:pl-[128px] fixed  xl:left-[64px] 3xl:left-[30%] text-[#FFFFFF] z-[80]`}>
+            <div id='navbar' className={`mx-[24px] xl:mx-0 barbar pl-[24px] md:pl-[32px] border-[1.77px] border-[#FFFFFF1A] pr-[10px] md:pr-[16px] flex justify-between items-center mt-[32px]  /xl:ml-[128px] /2xl:ml-[45px] /3xl:ml-[0]  backdrop-blur-[20px] md:w-fit py-[10px] md:py-[16px] gap-[64px] rounded-[4000px] ${isOpen ? "active" : ""} ${isScrolled ? 'scrolled bg-[#0A8A58]' : 'unscrolled bg-gradient-to-b from-[#FFFFFF1F] to-[#FFFFFF1F]'}`}>
                 <Link href={'/'} className='flex items-center gap-[11.76px]'>
                     <Image width={35.11} height={36} src={'/pairdelLogo.svg'} alt='logo'/>
                     <p>Pairdel</p> 
