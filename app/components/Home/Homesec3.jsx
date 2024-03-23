@@ -61,13 +61,13 @@ export default function Homesec3() {
 
         <div className='w-full lg:w-[522px] flex flex-col gap-[20px] text-start'>
             <h2 className='font-[700] text-[36px]  md:text-[56px] leading-[44px] md:leading-[68px]'>
-                Lorem ipsum dolor sit consectetur.
+                Passive income with your Passport!
             </h2>
 
             <p className='font-[500] text-[18px] md:text-[20px] leading-[26px] md:leading-[30px]'>
-                Lorem ipsum dolor sit amet consectetur. 
-                Sit nunc neque turpis tincidunt pellentesque
-                non est aliquam. Lectus amet.
+                And you as a traveller can make an extra income for… traveling. 
+                You can withdraw your earnings directly to your bank account. 
+                Your passport to passive income.
             </p>
         </div>
     </div>

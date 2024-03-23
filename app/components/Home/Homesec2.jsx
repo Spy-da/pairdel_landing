@@ -69,13 +69,14 @@ export default function Homesec2() {
 
         <div className='w-full lg:w-[522px] flex flex-col gap-[20px] text-start'>
             <h2 className='font-[700] text-[36px]  md:text-[56px] leading-[44px] md:leading-[68px]'>
-                Lorem ipsum dolor sit consectetur.
+                Quick, safe, and hassle-free delivery
             </h2>
 
             <p className='font-[500] text-[18px] md:text-[20px] leading-[26px] md:leading-[30px]'>
-                Lorem ipsum dolor sit amet consectetur. 
-                Sit nunc neque turpis tincidunt pellentesque
-                non est aliquam. Lectus amet.
+                Track all your orders in one convenient place, 
+                ensuring a smooth process with on-time arrivals, 
+                transparent pricing, and a delightful travel experience, 
+                free from delivery headaches.
             </p>
         </div>
         <div className='relative md:block flex justify-center'>

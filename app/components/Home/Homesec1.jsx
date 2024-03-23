@@ -48,13 +48,15 @@ export default function Homesec1() {
 
         <div className='w-full lg:w-[522px] flex flex-col gap-[20px] text-start'>
             <h2 className='font-[700] text-[36px]  md:text-[56px] leading-[44px] md:leading-[68px]'>
-                Lorem ipsum dolor sit consectetur.
+                Delivery Options You Can Trust
             </h2>
 
             <p className='font-[500] text-[18px] md:text-[20px] leading-[26px] md:leading-[30px]'>
-                Lorem ipsum dolor sit amet consectetur. 
-                Sit nunc neque turpis tincidunt pellentesque
-                non est aliquam. Lectus amet.
+                All our registered travelers have been carefully 
+                verified to ensure your packages are in good hands. 
+                You just have to choose from the available offers based 
+                on delivery date, price, and reviews. For once, you have
+                 real delivery options.
             </p>
         </div>
     </div>
