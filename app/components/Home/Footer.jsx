@@ -12,11 +12,11 @@ export default function Footer() {
                 </h3>
 
                 <span className='flex gap-[22px]'>
-                    <a href="http://" className=''>
+                    <a href="http://" className='button'>
                         <Image src={'/GoogleButton.svg'} alt='' width={192} height={64} className='w-[132px] md:w-full'></Image>
                     </a>
 
-                    <a href="http://" >
+                    <a href="http://" className='button'>
                         <Image src={'/AppStoreButton.svg'} alt='' width={192} height={64} className='w-[132px] md:w-full'></Image>
                     </a>
                 </span>
