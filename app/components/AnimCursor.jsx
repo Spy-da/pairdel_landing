@@ -6,20 +6,20 @@ export default function AnimCursor() {
     
         <AnimatedCursor
       innerSize={8}
-      outerSize={30}
+      outerSize={50}
       color='193, 11, 111'
       outerAlpha={0.2}
       outerStyle={{
         // border: '3px solid #B0916E',
         // border: '3px solid #FFFFFF',
-        border: '3px solid #ff0000',
+        border: '2px solid #25A774',
         backgroundColor: 'transparent'
       }}
       innerStyle={{
         backgroundColor: '#ff0000'
       }}
       innerScale={0.7}
-      outerScale={5}
+      outerScale={2}
       trailingSpeed ={6}
       clickables={[
         'a',
