@@ -9,9 +9,23 @@ export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
+     const [modal, setModal] = useState(false);
+
+        const toggleModal = () => {
+            setModal(!modal);
+        };
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    useEffect(() => {
+        if (modal) {
+            document.body.classList.add('active-modal');
+        } else {
+            document.body.classList.remove('active-modal');
+        }
+    }, [modal]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -64,9 +78,10 @@ export default function Nav() {
                             Help Center
                         </Link>
 
-                        <a href="http://" className='px-[26px] py-[14px] bg-[#1E2F28]  rounded-[4000px] font-[700] text-[20px] leading-[28px]'>
+                        <button onClick={toggleModal} className='px-[26px] py-[14px] bg-[#1E2F28]  rounded-[4000px] font-[700] text-[20px] leading-[28px] hover:opacity-[0.8]'>
                             Get the app
-                        </a>
+                        </button>
+                        
                     </span>
 
                     
@@ -74,16 +89,16 @@ export default function Nav() {
 
 
                 <button
-                        type="button"
-                        className={`hamburger  bg-[#1E2F28]  /flex /flex-col /gap-[10px]  md:hidden ${isOpen ? "active" : ""}`}
-                        onClick={toggleMenu}
-                    >
+                    type="button"
+                    className={`hamburger  bg-[#1E2F28]  /flex /flex-col /gap-[10px]  md:hidden ${isOpen ? "active" : ""}`}
+                    onClick={toggleMenu}
+                >
                         
-                        <div className="hamburger-bar top"></div>
-                        <div className="hamburger-bar middle"></div>
-                        <div className="hamburger-bar bottom"></div>
+                    <div className="hamburger-bar top"></div>
+                    <div className="hamburger-bar middle"></div>
+                    <div className="hamburger-bar bottom"></div>
                         
-                    </button>
+                </button>
             </div>
 
             <span className={`/hidden md:hidden flex flex-col text-center w-full justify-center px-[24px] gap-[24px] items-start navMenu ${
@@ -101,7 +116,21 @@ export default function Nav() {
                     Get the app
                 </a>
             </span>
-    
+            
+
+            {modal && (
+            <div className="modal">
+                <div onClick={toggleModal} className="overlay "></div>
+                <div className="modal-content w-[560px] rounded-[24px] flex flex-col gap-[32px] justify-center items-center  py-[48px] ">
+                    <h2 className="font-[700] text-[36px] leading-[52px] text-[#333333] text-center">Get the Pairdel app</h2>
+                    <Image src={'/QR.png'} alt='' height={216} width={216}></Image>
+
+                    <p className='font-[600] text-[20px] leading-[30px] text-[#5C5C5C] text-center w-[402px]'>
+                        Scan the QR code with your phone camera to download the Pairdel app.
+                    </p>
+                </div>
+            </div>
+      )}
         </div>
     )
 }

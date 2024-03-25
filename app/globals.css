@@ -45,7 +45,13 @@ body::-webkit-scrollbar-thumb {
 	background:#999;
 }
 
+.button{
+  transition: transform 0.3s ease;
+}
 
+.button:hover{
+  transform: translateY(-8px);
+}
 /* CSS from HomeSSec4  */
 .shop-travel{
   background-color: #04492E;
@@ -156,4 +162,34 @@ body::-webkit-scrollbar-thumb {
     }
 } */
 
-  
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  opacity: 1;
+  /* transition: opacity 0.3 ease; */
+}
+
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  border-radius: 24px;
+  width: 560px;
+}
