@@ -65,7 +65,7 @@ export default function Homesec2() {
         });
     }, []);
   return (
-    <div className=' text-[#FFFFFF] overflow-hidden flex flex-col lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[99px] items-center /justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] /bg-center /md:bg-cover /bg-no-repeat bg-repeat xl:bg-no-repeat'>
+    <div className='contain text-[#FFFFFF] 3xl:justify-center 3xl:bg-center overflow-hidden flex flex-col lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[99px] items-center /justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] /bg-center /md:bg-cover /bg-no-repeat bg-repeat xl:bg-no-repeat'>
 
         <div className='w-full lg:w-[522px] flex flex-col gap-[20px] text-start'>
             <h2 className='font-[700] text-[36px]  md:text-[56px] leading-[44px] md:leading-[68px]'>

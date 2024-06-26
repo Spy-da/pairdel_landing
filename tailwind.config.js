@@ -23,10 +23,16 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
 
       "2xl": "1440px",
-      // => @media (min-width: 1536px) { ... }
+      // => @media (min-width: 1440px) { ... }
 
       "3xl": "2560px",
-      // => @media (min-width: 1536px) { ... }
+      // => @media (min-width: 2560px) { ... }
+
+      "4xl": "3840px",
+      // => @media (min-width: 3840px) { ... }
+
+      "5xl": "5120px",
+      // => @media (min-width: 3840px) { ... }
     },
   },
   plugins: [],

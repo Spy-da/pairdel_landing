@@ -51,7 +51,7 @@ export default function Homesec3() {
         });
     }, []);
   return (
-    <div className=' text-[#FFFFFF] overflow-hidden flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[141px] items-center /justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] /xl:bg-center /md:bg-cover /bg-no-repeat bg-repeat xl:bg-no-repeat homesec3'>
+    <div className='contain text-[#FFFFFF] overflow-hidden 3xl:justify-center 3xl:bg-center flex flex-col-reverse lg:flex-row gap-[64px] lg:gap-[24px] xl:gap-[74px] 2xl:gap-[141px] items-center /justify-between px-[24px] xl:px-[128px] py-[64px] lg:py-[135px] bg-[url(/bg-liness1.svg)]  xl:bg-[url(/bg-liness.svg)] /xl:bg-center /md:bg-cover /bg-no-repeat bg-repeat xl:bg-no-repeat homesec3'>
         <div className='relative md:block flex justify-center '>
             <Image src={'/phone3.svg'} height={530} width={509} alt='' className="w-[70%] md:w-[100%]"></Image>
             <Image src={'/CenterAlert.svg'} height={146} width={192} alt='' className='absolute top-[-30%] md:top-[-5%] left-[5%] md:left-[-5%] centerAlert max-w-[35%] md:max-w-[100%]'></Image>

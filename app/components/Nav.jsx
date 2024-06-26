@@ -59,7 +59,7 @@ export default function Nav() {
         };
     }, []);
     return (
-        <div  className={`font-[600] text-[20px] leading-[28px] /flex w-full  justify-start xl:pl-[128px] fixed  xl:left-[64px] 3xl:left-[30%] text-[#FFFFFF] z-[80]`}>
+        <div  className={`font-[600] text-[20px] leading-[28px] /flex w-full  justify-start xl:pl-[128px] fixed  xl:left-[64px] 5xl:left-[38%] 4xl:left-[34%] 3xl:left-[26%] text-[#FFFFFF] z-[80]`}>
             <div id='navbar' className={`mx-[24px] xl:mx-0 barbar pl-[24px] md:pl-[32px] border-[1.77px] border-[#FFFFFF1A] pr-[10px] md:pr-[16px] flex justify-between items-center mt-[32px]  /xl:ml-[128px] /2xl:ml-[45px] /3xl:ml-[0]  backdrop-blur-[20px] md:w-fit py-[10px] md:py-[16px] gap-[64px] rounded-[4000px] ${isOpen ? "active" : ""} ${isScrolled ? 'scrolled bg-[#0A8A58]' : 'unscrolled bg-gradient-to-b from-[#FFFFFF1F] to-[#FFFFFF1F]'}`}>
                 <Link href={'/'} className='flex items-center gap-[11.76px]'>
                     <Image width={35.11} height={36} src={'/pairdelLogo.svg'} alt='logo'/>
