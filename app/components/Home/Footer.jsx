@@ -1,8 +1,16 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+
 export default function Footer() {
+    const [year, setYear] = useState(new Date().getFullYear())
+
+    useEffect(()=>{
+        setYear(new Date().getFullYear())
+    }, [])
+    
   return (
     <div className='bg-[#04492E] px-[24px] xl:px-[128px] pt-[64px] md:pt-[112px]'>
         <div className='pb-[64px] border-b-[1px] border-[#027849] flex flex-col md:flex-row justify-between gap-[48px] lg:gap-[176px]'>
@@ -60,7 +68,7 @@ export default function Footer() {
         </div>
 
         <p className='text-[#F5FFFBCC] py-[64px] md:py-[0px] md:pt-[44px] md:pb-[88px] text-center font-[400] text-[18px] leading-[28px]'>
-            © 2024 Pairdel · All rights reserved.
+            © {year} Pairdel · All rights reserved.
         </p>
     </div>
   )

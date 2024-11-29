@@ -19,7 +19,7 @@ export default function AnimCursor() {
         backgroundColor: '#ff0000'
       }}
       innerScale={0.7}
-      outerScale={2}
+      outerScale={1}
       trailingSpeed ={6}
       clickables={[
         'a',
@@ -41,7 +41,7 @@ export default function AnimCursor() {
             color: '255, 255, 255',
             outerAlpha: 0.3,
             innerScale: 0.7,
-            outerScale: 5
+            outerScale: 1
           }
         }
       ]}
