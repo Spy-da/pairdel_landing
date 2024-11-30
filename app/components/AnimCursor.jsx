@@ -19,7 +19,7 @@ export default function AnimCursor() {
         backgroundColor: '#ff0000'
       }}
       innerScale={0.7}
-      outerScale={1}
+      outerScale={0.5}
       trailingSpeed ={6}
       clickables={[
         'a',
